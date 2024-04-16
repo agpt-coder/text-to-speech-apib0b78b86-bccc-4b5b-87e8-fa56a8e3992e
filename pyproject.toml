@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "text-to-speech-api"
+version = "0.1.0"
+description = "The project involves creating an API endpoint that accepts input in the form of plain text. It then converts this input text into natural-sounding speech audio utilizing a preferred Python package, gTTS (Google Text-to-Speech), which stands out for its straightforward usage, support for multiple languages, and reliance on Google's robust and high-quality text-to-speech engine. Additionally, the generated audio file is to be returned in MP3 format, adhering to the user's stipulation for a widely compatible format that maintains a balance between file size and sound quality. To ensure optimal audio quality and user experience, an audio bitrate of 320 kbps is recommended, providing high-quality sound while managing file size efficiently. The information gathered indicates that the essential components for completing this task include the gTTS package for text-to-speech conversion, output specification in MP3 format, and adherence to a 320 kbps bitrate for the audio file."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "*"
+gtts = "^2.2.4"
+prisma = "*"
+pydantic = "*"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
